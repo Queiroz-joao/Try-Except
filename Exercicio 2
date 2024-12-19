@@ -1,0 +1,15 @@
+def verificar_data(data):
+    try:
+        dia, mes, ano = map(int, data.split("/"))
+        from datetime import datetime
+        datetime(ano, mes, dia)
+        return "Data válida"
+    except ValueError:
+        raise Exception("Data inválida")
+
+data = input("Digite uma data no formato dd/mm/aaaa: ")
+try:
+    resultado = verificar_data(data)
+    print(resultado)
+except Exception as e:
+    print(e)
