@@ -1,0 +1,5 @@
+def soma_lista(lista):
+    try:
+        return sum(lista)
+    except TypeError:
+        raise Exception("Lista inválida")
