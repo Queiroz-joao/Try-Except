@@ -1,0 +1,5 @@
+def dividir(n1, n2):
+    try:
+        return n1 / n2
+    except ZeroDivisionError:
+        raise Exception("Divisão por zero não permitida")
