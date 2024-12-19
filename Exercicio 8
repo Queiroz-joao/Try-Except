@@ -1,0 +1,5 @@
+def ordenar_strings(lista):
+    try:
+        return sorted(lista)
+    except TypeError:
+        raise Exception("Lista inválida")
